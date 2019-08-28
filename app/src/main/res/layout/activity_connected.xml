@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@color/colorApp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+            app:layout_constraintBottom_toTopOf="@id/you_have_successfully"
+            android:textColor="@color/color_text_success"
+            android:textSize="@dimen/text_size_login_success"
+            android:id="@+id/login_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/margin_top_success"
+            android:text="@string/login_success"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+    />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/you_have_successfully"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="@dimen/text_size_you_have_successfully"
+            android:textColor="@color/color_text_success"
+            android:text="@string/you_have_successfully_logged_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Close"
+            android:textColor="@color/color_button_text"
+            android:background="@drawable/button_style"
+            android:textAllCaps="false"
+            android:text="@string/close"
+            android:layout_marginTop="@dimen/margin_top_button_close"
+            app:layout_constraintTop_toBottomOf="@id/you_have_successfully"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="@dimen/button_width_close"
+            android:layout_height="@dimen/button_height_close"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

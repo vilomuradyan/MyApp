@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MyApp</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="get">Get</string>
+    <string name="started">Started</string>
+    <string name="sign_up">Sign up</string>
+    <string name="username">Username</string>
+    <string name="reset_password">Reset password</string>
+    <string name="login_success">Login success</string>
+    <string name="you_have_successfully_logged_in">You have successfully logged in.</string>
+    <string name="close">Close</string>
+</resources>

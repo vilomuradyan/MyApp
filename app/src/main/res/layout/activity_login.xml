@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@color/colorApp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.activities.LoginActivity"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/margin_32"
+            app:layout_constraintBottom_toTopOf="@id/Username"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ImageMyApp"
+                android:src="@drawable/my_app"
+                android:layout_width="@dimen/width_login_image"
+                android:layout_height="@dimen/height_login_image"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatEditText
+            android:drawableStart="@drawable/ic_user"
+            android:layout_marginTop="@dimen/margin_32"
+            android:textCursorDrawable="@drawable/color_cursor"
+            app:backgroundTint="@android:color/white"
+            android:id="@+id/Username"
+            android:inputType="text"
+            android:textSize="@dimen/text_size_email_and_password"
+            android:drawablePadding="@dimen/padding_email_and_password_image"
+            android:textColor="@android:color/white"
+            android:layout_marginEnd="@dimen/margin_end_login_email_and_password"
+            android:layout_marginStart="@dimen/margin_start_login_email_and_password"
+            android:hint="@string/username"
+            android:textColorHint="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+            android:drawableStart="@drawable/ic_password"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:inputType="textPassword"
+            app:backgroundTint="@android:color/white"
+            android:id="@+id/Password"
+            android:drawablePadding="@dimen/padding_email_and_password_image"
+            android:textColorHint="@android:color/white"
+            android:hint="@string/password"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_email_and_password"
+            android:layout_marginTop="@dimen/margin_login_password_top"
+            app:layout_constraintTop_toBottomOf="@id/Username"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginEnd="@dimen/margin_end_login_email_and_password"
+            android:layout_marginStart="@dimen/margin_start_login_email_and_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+            android:textColor="@color/color_button_text"
+            android:id="@+id/BtnLogin"
+            android:layout_marginTop="@dimen/margin_top_login_button"
+            android:textAllCaps="false"
+            android:text="@string/login"
+            android:layout_marginEnd="@dimen/margin_start_and_end_for_button"
+            android:layout_marginStart="@dimen/margin_start_and_end_for_button"
+            android:background="@drawable/button_style"
+            app:layout_constraintTop_toBottomOf="@id/Password"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="@dimen/button_width_close"
+            android:layout_height="@dimen/button_height_close"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/TextForgot"
+            android:layout_marginTop="@dimen/margin_top_text_forgot"
+            android:textColor="@android:color/white"
+            app:layout_constraintTop_toBottomOf="@id/BtnLogin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="@string/forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
